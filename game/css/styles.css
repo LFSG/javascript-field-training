@@ -1,14 +1,14 @@
 #token {
-  height: 5%;
-  width: 4%;
+  height: 50px;
+  width: 50px;
   position: absolute;
   display: inline-block;
-  top: 85%;
+  top: 550px;
 }
 
 #container {
-  height: 90%;
-  width: 50%;
+  height: 600px;
+  width: 700px;
   top: 0;
   left: 0;
   border: 1px black solid;

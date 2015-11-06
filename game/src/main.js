@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
   var token = new Token($('#container'));
-  $('#container').on('keydown', function(e) {
+  $('body').on('keyup', function(e) {
     if(e.keyCode === 37) {
       token.direction = 'left';
     }

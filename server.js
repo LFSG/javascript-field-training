@@ -18,11 +18,11 @@ http.createServer(function(req, res) {
     req.on('data', function(chunk){
       var body = '';
       body += chunk;
+      console.log(body);
     });
-
   req.on('end', function() {
     res.writeHead(200, "OK", {'Content-Type': 'text/html'});
     res.end('Hello, world!');
   })
   }
-}).listen(80);
+}).listen(4000);
