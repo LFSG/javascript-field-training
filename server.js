@@ -18,11 +18,12 @@ http.createServer(function(req, res) {
     req.on('data', function(chunk){
       var body = '';
       body += chunk;
-    })
+    });
 
-  req.on('end', function() {
-    res.writeHead(200, "OK", {'Content-Type': 'text/html'});
-    res.end('Play Game');
-  })
+    req.on('end', function() {
+      res.writeHead(200, "OK", {'Content-Type': 'text/html'});
+      res.end('Hello, world!');
+    });
   }
-}).listen(8888);
+
+}).listen(80);
