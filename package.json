@@ -1,15 +1,28 @@
 {
-  "name": "LSFG",
-  "version": "0.0.1",
-  "description": "Learn how to make a fullstack app",
-  "main": "index.js",
-  "scripts": {},
-  "author": "Brian Grober, James Burnell, William Gottchalk",
+  "name": "LFSG",
+  "version": "1.0.0",
+  "description": "Learning Full Stack Game",
+  "main": "server.js",
+  "scripts": {
+    "start-server": "nodemon ./server.js",
+    "start": "npm run start-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jest": {
+    "scriptPreprocessor": "test/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "blanket": "^1.1.9",
     "chai": "^3.4.0",
     "mocha": "^2.3.3",
-    "sinon": "^1.17.2"
+    "sinon": "^1.17.2",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "nodemon": "^1.8.1"
   }
 }
