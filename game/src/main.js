@@ -8,4 +8,6 @@ $(document).ready(function(e) {
       token.direction = 'right';
     }
   });
+
+  var asteroid = new AddAsteroid($('#container'));
 });

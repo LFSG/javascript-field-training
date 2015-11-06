@@ -21,10 +21,11 @@ http.createServer(function(req, res) {
       var body = '';
       body += chunk;
       res.writeHead(200);
-      res.end('Hello, world!\n');
+      res.write('Hello, world!\n');
+      res.end();
 
     });
 
   // res.end('ello, world!\n');
   }
-}).listen(8080);
+}).listen(8000);
