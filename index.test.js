@@ -1,4 +1,5 @@
 var expect = require('chai').expect;
+var should = require('chai').should()
 // var homePage = require('./server');
 var assert = require('assert');
 var	http = require('http');
@@ -17,48 +18,32 @@ describe('the server', function () {
   it('should say "Hello, world!"', function (done) {
     http.get('http://localhost:80', function (res) {
       var data = '';
- 
       res.on('data', function (chunk) {
         data += chunk;
       });
-
       res.on('end', function () {
-        assert.equal('Hello, world!\n', data);
+        res.body.should.be.a('string');
         done();
       });
     });
   });
 
-  it('should get data', function (done) {
-  	http.get('http://localhost:80', function (res) {
-  		var data;
+  it('should get data w code 200', function (done) {
+  	chai.request(server)
+        .get('/index.html') 
+        .end(function (err, res){
+          res.should.have.status(500);
+         
+        })
+  		
   		done();
-  	})
-
+  
   });
 
   it('should post data', function (done) {
   	http.get('http://localhost:80', function (res) {
   		done();
   	})
-
   });
 
 });
-
-// describe('the client', function() {
-// 	it('testArray', function() {
-// 		expect(homePage.testArray).to.be.Array;
-
-// 		function isArray(array) {
-// 			return array.every(function(item) {
-// 				return typeof item === Array;
-// 			})
-// 		}
-// 	});
-// 	it('one', function() {
-// 		expect(homePage.one).to.be.String;
-
-// 	});
-
-// });
