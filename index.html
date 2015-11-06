@@ -4,6 +4,15 @@
   <title>LFSG</title>
 </head>
   <body>
-    <h1>Hello World</h1>
+    <button id='post'>Play game</button>
   </body>
+  <script>
+  var el = document.getElementById('post');
+  el.addEventListener('click', function(){
+    var request = new XMLHttpRequest();
+      request.open('POST', '/my/url', true);
+      request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+      request.send('play game');
+  });
+  </script>
 </html>

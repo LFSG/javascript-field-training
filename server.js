@@ -14,4 +14,16 @@ http.createServer(function(req, res) {
     res.end(body);
     });
   }
-}).listen('3000');
+  if(req.method === 'POST') {
+    req.on('data', function(chunk){
+      var body = '';
+      body += chunk;
+      console.log(body);
+    })
+
+  req.on('end', function() {
+    res.writeHead(200, "OK", {'Content-Type': 'text/html'});
+    res.end();
+  })
+  }
+}).listen('8888');
