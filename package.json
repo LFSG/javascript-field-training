@@ -1,0 +1,15 @@
+{
+  "name": "LSFG",
+  "version": "0.0.1",
+  "description": "Learn how to make a fullstack app",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Brian Grober, James Burnell, William Gottchalk",
+  "license": "ISC",
+  "dependencies": {
+    "blanket": "^1.1.9",
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
+  }
+}
