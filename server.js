@@ -22,7 +22,7 @@ http.createServer(function(req, res) {
 
   req.on('end', function() {
     res.writeHead(200, "OK", {'Content-Type': 'text/html'});
-    res.end('Play Game');
+    res.end('Hello, world!');
   })
   }
-}).listen('8888');
+}).listen(80);
