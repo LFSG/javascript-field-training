@@ -20,10 +20,9 @@ http.createServer(function(req, res) {
       body += chunk;
     });
 
-    req.on('end', function() {
-      res.writeHead(200, "OK", {'Content-Type': 'text/html'});
-      res.end('Hello, world!');
-    });
+  req.on('end', function() {
+    res.writeHead(200, "OK", {'Content-Type': 'text/html'});
+    res.end('Hello, world!');
+  })
   }
-
 }).listen(80);
