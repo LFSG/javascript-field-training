@@ -10,19 +10,22 @@ http.createServer(function(req, res) {
 		  }
     res.writeHead(200, {
       'Content-Type': 'text/html'
-    });
+    })
+
     res.end(body);
-    });
+    })
   }
+
   if(req.method === 'POST') {
     req.on('data', function(chunk){
       var body = '';
       body += chunk;
       console.log(body);
     });
-  req.on('end', function() {
-    res.writeHead(200, "OK", {'Content-Type': 'text/html'});
-    res.end('Hello, world!');
-  })
+    req.on('end', function() {
+      res.writeHead(200, "OK", {'Content-Type': 'text/html'});
+      res.end('Hello, world!');
+    });
   }
-}).listen(4000);
+
+}).listen(8000);

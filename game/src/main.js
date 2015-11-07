@@ -1,11 +1,17 @@
 $(document).ready(function(e) {
-  var token = new Token($('#container'));
+  var ship = new Ship($('#container'));
   $('body').on('keyup', function(e) {
     if(e.keyCode === 37) {
-      token.direction = 'left';
+      ship.direction = 'left';
     }
     if (e.keyCode === 39) {
-      token.direction = 'right';
+      ship.direction = 'right';
     }
   });
+  function generateRock() {
+    var asteroid = new AddAsteroid($('#container'));
+    return asteroid;
+  }
+  generateRock();
+  setInterval(generateRock, Math.floor(Math.random() * 1000)+1000);
 });

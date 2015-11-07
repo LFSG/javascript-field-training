@@ -1,5 +1,5 @@
-function Token($el) {
-  this.node = $('<img id="token" src="./pictures/ship.gif"></img>');
+function Ship($el) {
+  this.node = $('<img id="ship" src="./pictures/ship.gif"></img>');
   this.direction = 'right';
   this.SPEED = 0.5;
   this.node.css({left: 8});
@@ -7,16 +7,13 @@ function Token($el) {
   setTimeout(this.move.bind(this), this.SPEED);
 }
 
-Token.prototype.move = function(){
-  console.log(this.direction);
-
+Ship.prototype.move = function(){
   var direction = this.direction;
   var position = this.node.position();
   if (direction === 'right') {
     position.left += 1;
   }
   if (direction === 'left') {
-    console.log('left');
     position.left -= 1;
   }
 
