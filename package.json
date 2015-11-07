@@ -4,11 +4,11 @@
   "description": "Learning Full Stack Game",
   "main": "server.js",
   "scripts": {
-    "build": "browserify index.test.js > static/bundle.js",
-    "watch": "watchify index.test.js -o static/bundle.js -dv",
-    "start-server": "nodemon ./server.js",
+    "start-server": "node ./server.js",
     "start": "npm run start-server",
-    "test": "./node_modules/.bin/mocha-phantomjs ./game/game.html"
+    "test-frontend": "./node_modules/.bin/mocha-phantomjs ./game/game.html",
+    "test-backend": "mocha index.test.js -w",
+    "test": "npm run test-backend"
   },
   "jest": {
     "scriptPreprocessor": "test/preprocessor.js",
