@@ -15,11 +15,8 @@ AddAsteroid.prototype.move = function () {
 
 	if(position.top > 550) {
 		this.node.remove();
-		// var score = $('#score').text();
-		// score++;
-		// $('#score').text(score);
-	}
 
+	}
 	if(ship.position().left - position.left < 45 && ship.position().left - position.left > -45 && ship.position().top - position.top < 45 && ship.position().top - position.top > -45){
     alert('game over');
 		location.reload();

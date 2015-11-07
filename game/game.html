@@ -2,9 +2,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Game</title>
+    <script src="./../bower_components/jquery/dist/jquery.js"></script>
     <link href="./../bower_components/mocha/mocha.css" rel="stylesheet"></link>
     <link href="css/styles.css" type="text/css" rel="stylesheet"></link>
-    <script src="./../node_modules/jquery/dist/jquery.js"></script>
   </head>
   <body>
     <div id="mainContainer">
@@ -16,6 +16,8 @@
     <script src="./src/asteroids.js"></script>
     <script src="./../bower_components/mocha/mocha.js"></script>
     <script src="./../bower_components/expect/index.js"></script>
+    <script src="./../bower_components/chai/chai.js"></script>
+    <script src="./../bower_components/chai-jq/chai-jq.js"></script>
     <script>
       mocha.ui('bdd')
     </script>
@@ -24,20 +26,6 @@
     <script src="./../client-tests/casper.js"></script>
     <script>
       mocha.run()
-    </script>
-    <script>
-      if (window.mochaPhantomJS) {
-        mocha.setup('bdd');
-        addScript("./../client-tests/casper.js");
-      } else {
-        console.log('#2')
-      }
-      function addScript(path) {
-        var js = document.createElement('script');
-        js.type = 'text/javascript';
-        js.src = path;
-        document.body.appendChild(js);
-      }
     </script>
   </body>
 </html>
