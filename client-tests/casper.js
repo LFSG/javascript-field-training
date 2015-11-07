@@ -1,28 +1,39 @@
+describe('Spaceship', function(){
+	describe('A space ship is created', function() {
+		it('ship should exist', function () {
+			var shipDiv = document.getElementById('ship');
+			expect(shipDiv.constructor.name).to.be('HTMLImageElement', 'You should be using an image tag for this exericse.');
+		});
 
-
-describe('A space ship is created', function() {
-	var shipDiv = document.getElementById('ship');
-	it('should be an image of a ship', function() {
-		expect(ship.getAttribute(src)).toBe('ourImageDirectory',
-			'You need to link a source to your image tag');
+		it('should be an image of a ship', function() {
+			var shipDiv = document.getElementById('ship');
+			expect(shipDiv.getAttribute('src')).to.equal('./pictures/ship.gif',
+				'You need to link a source to your image tag');
+		});
+	});
+	describe('Ths spaceship has a move property', function(){
+		it('should have a move method', function(){
+			var move = Ship.prototype.move.constructor;
+			expect(move).to.be(Function, 'the move function must be on the constructor prototype.');
+		});
 	});
 });
 
+describe('Asteroid', function() {
+	it('an asteroid should exist', function () {
+		var asteroid = document.getElementsByClassName('asteroid');
+		expect(asteroid[0].constructor.name).to.be('HTMLImageElement', 'You should be using an image tag for this exercise');
+	});
 
-describe('Ths spaceship can move left and right', function(){
-	var div = document.createElement('div');
-	var spaceship = new Ship(div);
-	var spy = expect.spyOn(spaceship, 'move');
-
-	it('should have a move property', function(){
-		expect(spy)
-	})
+	it('should be an image of an asteroid', function() {
+		var asteroid = document.getElementsByClassName('asteroid');
+		expect(asteroid[0].getAttribute('src')).to.equal('./pictures/asteroid.png',
+			'You need your source to link to your asteroid image');
+	});
+	describe('Ths asteroid has a move property', function(){
+		it('should have a move method', function(){
+			var move = AddAsteroid.prototype.move.constructor;
+			expect(move).to.be(Function, 'the move function must be on the constructor prototype to conserve memory');
+		});
+	});
 });
-
-mocha.globals();
-if (window.mochaPhantomJS) {
-	console.log('running');
-	mochaPhantomJS.run();
-} else {
-	console.log('not running');
-}
