@@ -12,6 +12,7 @@
 }
 
 #container {
+  background-image: url(../pictures/space-4.jpg);
   height: 600px;
   width: 700px;
   top: 0;
@@ -19,7 +20,7 @@
   border: 1px black solid;
   margin: 0;
   padding: 0;
-  background: rgba(250, 250, 250, 0.5);
+  /*background: rgba(250, 250, 250, 0.5);*/
 }
 
 .asteroid {
@@ -29,9 +30,16 @@
  position: absolute;
 }
 
+.bonusToken {
+ height: 50px;
+ width: 50px;
+ top: 0px;
+ position: absolute;
+}
+
 #score {
   text-align: center;
-  background-color: black;
+  background-color: blue;
   color: white;
   font-weight: bold;
   font-family: helvetica, sans-serif;
@@ -66,6 +74,7 @@
 #mocha .error {
   background-color: rgba(204, 0, 0, 0.1);
   z-index: 1;
+  
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
   -webkit-animation-duration: .75s;
@@ -153,6 +162,10 @@
   }
 }
 
+.rotateN {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
 
 .rotateE {
   -webkit-transform: rotate(90deg);
