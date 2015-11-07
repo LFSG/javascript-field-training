@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
   var ship = new Ship($('#container'));
-  $('#container').on('keydown', function(e) {
+  $('body').on('keydown', function(e) {
     if(e.keyCode === 37) {
       ship.direction = 'left';
     }
@@ -8,6 +8,10 @@ $(document).ready(function(e) {
       ship.direction = 'right';
     }
   });
-
-  var asteroid = new AddAsteroid($('#container'));
+  function generateRock() {
+    var asteroid = new AddAsteroid($('#container'));
+    return asteroid;
+  }
+  generateRock();
+  setInterval(generateRock, Math.floor(Math.random() * 1000)+1000);
 });
