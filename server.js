@@ -23,8 +23,16 @@ http.createServer(function(req, res) {
       console.log(body);
     });
     req.on('end', function() {
-      res.writeHead(200, "OK", {'Content-Type': 'text/html'});
-      res.end('Hello, world!');
+      fs.readFile('./game/game.html', function(err, body) {
+        if (err) {
+  			     res.writeHead(500);
+  			        res.end('error');
+  		  }
+        res.writeHead(200, {
+          'Content-Type': 'text/html'
+        });
+        res.end(body);
+      });
     });
   }
 
