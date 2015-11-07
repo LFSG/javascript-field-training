@@ -1,7 +1,7 @@
 describe('A space ship is created', function() {
 	var shipDiv = document.getElementById('ship');
 	it('should be an image of a ship', function() {
-		expect(ship.getAttribute(src)).toBe('ourImageDirectory', 
+		expect(ship.getAttribute(src)).toBe('ourImageDirectory',
 			'You need to link a source to your image tag');
 	});
 });
@@ -17,9 +17,9 @@ describe('Ths spaceship can move left and right', function(){
 });
 
 mocha.globals();
-if (window.mochaPhantomJS) { 
+if (window.mochaPhantomJS) {
 	console.log('running');
-	mochaPhantomJS.run(); 
+	mochaPhantomJS.run();
 } else {
 	console.log('not running');
 }
