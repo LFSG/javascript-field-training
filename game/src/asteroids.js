@@ -20,7 +20,7 @@ AddAsteroid.prototype.move = function () {
 	}
 
 	if($('#ship').position().left - position.left < 50 && $('#ship').position().left - position.left > -50 && position.top  > 510){
-    alert('game over');
-		location.reload();
+    //alert('game over');
+		//location.reload();
   }
 };
