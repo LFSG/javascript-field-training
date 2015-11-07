@@ -1,7 +1,14 @@
+var chai = require('chai');
 var expect = chai.expect;
 var should = chai.should()
+// var homePage = require('./server');
 var assert = require('assert');
 var sinon = require('sinon');
+var chai = require('chai');
+var request = require('superagent');
+// var request = require('supertest')('http://localhost:8080');
+var express = require('express');
+var app = express();
 
 var server;
 
@@ -15,54 +22,42 @@ after(function () {
 
 
 describe('the server', function () {
-  it('should create a server that can listen for requests', function() {
-      var callback = sinon.spy();
-      getTodos(42, callback);
-
-      server.requests[0].respond( 200,
-        JSON.stringify([{ id: 1, test: "Provides examples", done: true}])
-      );
-
-      assert(callback.calledOnce);
-    });
+  // this.timeout(5000);
 
   it('should return 200', function (done) {
-    http.get('http://localhost:80', function (res) {
+    http.get('http://localhost:8000', function (res) {
       assert.equal(200, res.statusCode);
       done();
     });
 
   });
 
-  it('should say "Hello, world!"', function (done) {
-    http.get('http://localhost:80', function (res) {
+  it('should make GET request to display button', function (done) {
+    http.get('http://localhost:8000', function (res) {
       var data = '';
       res.on('data', function (chunk) {
         data += chunk;
       });
       res.on('end', function () {
-        res.body.should.be.a('string');
-        done();
+        data.should.not.be.empty 
+          done();
       });
     });
   });
 
-  it('should get data w code 200', function (done) {
-  	chai.request(server)
-        .get('/index.html') 
-        .end(function (err, res){
-          res.should.have.status(500);
-         
-        })
-  		
-  		done();
-  
-  });
+  it('should post data on button click', function (done) {
+    request.post('http://localhost:8000')
+    .send("world")
+    .end(function(err, res){
+      console.log('here!');
+      expect(res).to.exist; 
+      // expect(res.statusCode).to.equal(200);
+      done();
+     
+   })
+ 
 
-  it('should post data', function (done) {
-  	http.get('http://localhost:80', function (res) {
-  		done();
-  	})
+    
   });
 
 });

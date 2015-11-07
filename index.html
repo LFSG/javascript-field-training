@@ -10,8 +10,27 @@
     <script src="./node_modules/mocha/mocha.js"></script>
   </body>
   <script>
-    mocha.globals();
-    if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
-    else { mocha.run(); }
+
+  var el = document.getElementById('post');
+
+  el.addEventListener('click', function(){
+
+    var request = new XMLHttpRequest();
+
+    request.open('POST', 'http://localhost:8000', true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    request.onreadystatechange = function (){
+      if(request.readyState === 4 && request.status === 200){
+        alert(request.responseText);
+      }
+    }
+    request.onerror = function (err){
+      console.log(err);
+      console.log('error');
+    }
+    console.log('button clicked!')
+    request.send();
+
+  });
   </script>
 </html>
