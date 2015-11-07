@@ -16,6 +16,12 @@ Ship.prototype.move = function(){
   if (direction === 'left') {
     position.left -= 1;
   }
+  if (direction === 'down') {
+    position.top += 1;
+  }
+  if (direction === 'up') {
+    position.top -= 1;
+  }
 
   if(position.left > 650){
     position.left = 650;
@@ -24,6 +30,16 @@ Ship.prototype.move = function(){
 
   if(position.left < 8){
     position.left = 8;
+    this.direction = 'b';
+  }
+
+  if(position.top < 8){
+    position.top = 8;
+    this.direction = 'b';
+  }
+
+  if(position.top > 550){
+    position.top = 550;
     this.direction = 'b';
   }
   this.node.offset(position);

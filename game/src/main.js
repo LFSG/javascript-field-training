@@ -3,9 +3,19 @@ $(document).ready(function(e) {
   $('body').on('keydown', function(e) {
     if(e.keyCode === 37) {
       ship.direction = 'left';
+      ship.node.addClass('rotateW');
     }
     if (e.keyCode === 39) {
       ship.direction = 'right';
+      ship.node.addClass('rotateE');
+    }
+    if (e.keyCode === 38) {
+      ship.direction = 'up';
+      ship.node.addClass('rotateN');
+    }
+    if (e.keyCode === 40) {
+      ship.direction = 'down';
+      ship.node.addClass('rotateS');
     }
   });
   function generateRock() {

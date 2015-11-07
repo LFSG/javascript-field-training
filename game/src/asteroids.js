@@ -7,6 +7,7 @@ function AddAsteroid($el) {
 }
 
 AddAsteroid.prototype.move = function () {
+	var ship = $('#ship');
 	var position = this.node.position();
 	position.top += 1;
 	this.node.offset(position);
@@ -19,7 +20,7 @@ AddAsteroid.prototype.move = function () {
 		$('#score').text(score);
 	}
 
-	if($('#ship').position().left - position.left < 50 && $('#ship').position().left - position.left > -50 && position.top  > 510){
+	if(ship.position().left - position.left < 50 && ship.position().left - position.left > -50 && ship.position().top - position.top < 50 && ship.position().top - position.top > -50){
     alert('game over');
 		location.reload();
   }
