@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'chai-jquery' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /Users/WillG/Desktop/learn-full-stack-game/package.json
+5 warn package.json LFSG@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/assert/package.json
+7 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/blanket/package.json
+8 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/browserify/package.json
+9 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/casper/package.json
+10 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai/package.json
+11 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery/package.json
+12 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/expect/package.json
+13 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/fs/package.json
+15 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/http/package.json
+16 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/jquery/package.json
+17 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/mocha/package.json
+18 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/mocha-phantomjs/package.json
+19 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/nodemon/package.json
+20 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/phantomjs/package.json
+21 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/request/package.json
+22 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/should/package.json
+23 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/sinon/package.json
+24 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/superagent/package.json
+25 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/supertest/package.json
+26 verbose installManyTop reading scoped package data from /Users/WillG/Desktop/learn-full-stack-game/node_modules/watchify/package.json
+27 info package.json assert@1.3.0 assert is also the name of a node core module.
+28 info package.json chai-jquery@2.0.0 No license field.
+29 info package.json fs@0.0.2 fs is also the name of a node core module.
+30 info package.json fs@0.0.2 No description
+31 info package.json fs@0.0.2 No repository field.
+32 info package.json fs@0.0.2 No README data
+33 info package.json jquery@2.1.4 No license field.
+34 info package.json http@0.0.0 http is also the name of a node core module.
+35 info package.json http@0.0.0 No description
+36 info package.json http@0.0.0 No repository field.
+37 info package.json http@0.0.0 No README data
+38 info package.json mocha-phantomjs@3.6.0 No license field.
+39 verbose readDependencies loading dependencies from /Users/WillG/Desktop/learn-full-stack-game/package.json
+40 verbose install chai-jquery is installed as 2.0.0
+41 silly cache add args [ 'chai-jquery', null ]
+42 verbose cache add spec chai-jquery
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'chai-jquery',
+43 silly cache add   scope: null,
+43 silly cache add   name: 'chai-jquery',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: '*',
+43 silly cache add   type: 'range' }
+44 silly addNamed chai-jquery@*
+45 verbose addNamed "*" is a valid semver range for chai-jquery
+46 silly addNameRange { name: 'chai-jquery', range: '*', hasData: false }
+47 silly mapToRegistry name chai-jquery
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/chai-jquery
+51 verbose addNameRange registry:https://registry.npmjs.org/chai-jquery not in flight; fetching
+52 verbose request uri https://registry.npmjs.org/chai-jquery
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 11:18:37 AM
+55 verbose request id 3297e607c7231700
+56 verbose etag "1JVBRNRNV5UNUGJPU41YHAHXY"
+57 http request GET https://registry.npmjs.org/chai-jquery
+58 http 304 https://registry.npmjs.org/chai-jquery
+59 verbose headers { date: 'Sat, 07 Nov 2015 19:18:38 GMT',
+59 verbose headers   via: '1.1 varnish',
+59 verbose headers   'cache-control': 'max-age=60',
+59 verbose headers   etag: '"1JVBRNRNV5UNUGJPU41YHAHXY"',
+59 verbose headers   age: '0',
+59 verbose headers   connection: 'keep-alive',
+59 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+59 verbose headers   'x-cache': 'HIT',
+59 verbose headers   'x-cache-hits': '1',
+59 verbose headers   'x-timer': 'S1446923918.115426,VS0,VE82',
+59 verbose headers   vary: 'Accept' }
+60 silly get cb [ 304,
+60 silly get   { date: 'Sat, 07 Nov 2015 19:18:38 GMT',
+60 silly get     via: '1.1 varnish',
+60 silly get     'cache-control': 'max-age=60',
+60 silly get     etag: '"1JVBRNRNV5UNUGJPU41YHAHXY"',
+60 silly get     age: '0',
+60 silly get     connection: 'keep-alive',
+60 silly get     'x-served-by': 'cache-lax1422-LAX',
+60 silly get     'x-cache': 'HIT',
+60 silly get     'x-cache-hits': '1',
+60 silly get     'x-timer': 'S1446923918.115426,VS0,VE82',
+60 silly get     vary: 'Accept' } ]
+61 verbose etag https://registry.npmjs.org/chai-jquery from cache
+62 verbose get saving chai-jquery to /Users/WillG/.npm/registry.npmjs.org/chai-jquery/.cache.json
+63 silly addNameRange number 2 { name: 'chai-jquery', range: '*', hasData: true }
+64 silly addNameRange versions [ 'chai-jquery',
+64 silly addNameRange   [ '1.0.0',
+64 silly addNameRange     '1.1.0',
+64 silly addNameRange     '1.1.1',
+64 silly addNameRange     '1.1.2',
+64 silly addNameRange     '1.2.0',
+64 silly addNameRange     '1.2.1',
+64 silly addNameRange     '1.2.2',
+64 silly addNameRange     '1.2.3',
+64 silly addNameRange     '2.0.0' ] ]
+65 silly addNamed chai-jquery@2.0.0
+66 verbose addNamed "2.0.0" is a plain semver version for chai-jquery
+67 silly cache afterAdd chai-jquery@2.0.0
+68 verbose afterAdd /Users/WillG/.npm/chai-jquery/2.0.0/package/package.json not in flight; writing
+69 verbose afterAdd /Users/WillG/.npm/chai-jquery/2.0.0/package/package.json written
+70 silly install resolved [ { author: { name: 'John Firebaugh', email: 'john.firebaugh@gmail.com' },
+70 silly install resolved     name: 'chai-jquery',
+70 silly install resolved     description: 'jQuery assertions for the Chai assertion library',
+70 silly install resolved     keywords: [ 'test', 'assertion', 'assert', 'testing', 'jQuery' ],
+70 silly install resolved     version: '2.0.0',
+70 silly install resolved     repository:
+70 silly install resolved      { type: 'git',
+70 silly install resolved        url: 'git+https://github.com/chaijs/chai-jquery.git' },
+70 silly install resolved     bugs: { url: 'https://github.com/chaijs/chai-jquery/issues' },
+70 silly install resolved     scripts: { test: 'mocha-phantomjs test/index.html' },
+70 silly install resolved     main: './chai-jquery',
+70 silly install resolved     engines: { node: '>= 0.4.0' },
+70 silly install resolved     devDependencies: { chai: '1', mocha: '1', 'mocha-phantomjs': '3', jquery: '2.1.0' },
+70 silly install resolved     _id: 'chai-jquery@2.0.0',
+70 silly install resolved     dist:
+70 silly install resolved      { shasum: '0f43042308dd746332bd98164aaef4a4f45ba167',
+70 silly install resolved        tarball: 'http://registry.npmjs.org/chai-jquery/-/chai-jquery-2.0.0.tgz' },
+70 silly install resolved     _from: 'chai-jquery@*',
+70 silly install resolved     _npmVersion: '1.3.2',
+70 silly install resolved     _npmUser: { name: 'jfirebaugh', email: 'john.firebaugh@gmail.com' },
+70 silly install resolved     maintainers: [ [Object], [Object] ],
+70 silly install resolved     directories: {},
+70 silly install resolved     _shasum: '0f43042308dd746332bd98164aaef4a4f45ba167',
+70 silly install resolved     _resolved: 'https://registry.npmjs.org/chai-jquery/-/chai-jquery-2.0.0.tgz',
+70 silly install resolved     readme: 'ERROR: No README data found!',
+70 silly install resolved     homepage: 'https://github.com/chaijs/chai-jquery#readme' } ]
+71 info install chai-jquery@2.0.0 into /Users/WillG/Desktop/learn-full-stack-game
+72 info installOne chai-jquery@2.0.0
+73 verbose installOne of chai-jquery to /Users/WillG/Desktop/learn-full-stack-game not in flight; installing
+74 verbose lock using /Users/WillG/.npm/_locks/chai-jquery-e3fbc0090e64ad3a.lock for /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+75 silly install write writing chai-jquery 2.0.0 to /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+76 verbose unbuild node_modules/chai-jquery
+77 info preuninstall chai-jquery@2.0.0
+78 info uninstall chai-jquery@2.0.0
+79 verbose unbuild rmStuff chai-jquery@2.0.0 from /Users/WillG/Desktop/learn-full-stack-game/node_modules
+80 info postuninstall chai-jquery@2.0.0
+81 silly gentlyRm /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery is being purged from base /Users/WillG/Desktop/learn-full-stack-game
+82 verbose gentlyRm don't care about contents; nuking /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+83 silly vacuum-fs purging /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+84 silly vacuum-fs quitting because other entries in /Users/WillG/Desktop/learn-full-stack-game/node_modules
+85 verbose tar unpack /Users/WillG/.npm/chai-jquery/2.0.0/package.tgz
+86 verbose tar unpacking to /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+87 silly gentlyRm /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery is being purged
+88 verbose gentlyRm don't care about contents; nuking /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+89 silly gunzTarPerm modes [ '755', '644' ]
+90 silly gunzTarPerm extractEntry package.json
+91 silly gunzTarPerm extractEntry .npmignore
+92 silly gunzTarPerm extractEntry README.md
+93 silly gunzTarPerm extractEntry LICENSE
+94 silly gunzTarPerm extractEntry chai-jquery.js
+95 silly gunzTarPerm extractEntry .travis.yml
+96 silly gunzTarPerm extractEntry History.md
+97 silly gunzTarPerm extractEntry test/chai-jquery-spec.js
+98 silly gunzTarPerm extractEntry test/jquery-inspect-spec.js
+99 silly gunzTarPerm extractEntry test/index.html
+100 verbose write writing to /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery/package.json
+101 info preinstall chai-jquery@2.0.0
+102 verbose readDependencies loading dependencies from /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery/package.json
+103 verbose readDependencies loading dependencies from /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery/package.json
+104 silly install resolved []
+105 verbose about to build /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+106 info build /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+107 info linkStuff chai-jquery@2.0.0
+108 silly linkStuff chai-jquery@2.0.0 has /Users/WillG/Desktop/learn-full-stack-game/node_modules as its parent node_modules
+109 verbose linkBins chai-jquery@2.0.0
+110 verbose linkMans chai-jquery@2.0.0
+111 verbose rebuildBundles chai-jquery@2.0.0
+112 info install chai-jquery@2.0.0
+113 info postinstall chai-jquery@2.0.0
+114 verbose unlock done using /Users/WillG/.npm/_locks/chai-jquery-e3fbc0090e64ad3a.lock for /Users/WillG/Desktop/learn-full-stack-game/node_modules/chai-jquery
+115 verbose validateInstall loading /Users/WillG/Desktop/learn-full-stack-game/package.json for validation
+116 verbose stack Error: The package phantomjs@1.9.18 does not satisfy its siblings' peerDependencies requirements!
+116 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+116 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+116 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+116 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+116 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+116 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+116 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+116 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+116 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+116 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+117 verbose cwd /Users/WillG/Desktop/learn-full-stack-game
+118 error Darwin 15.0.0
+119 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "chai-jquery"
+120 error node v4.2.1
+121 error npm  v2.14.7
+122 error code EPEERINVALID
+123 error peerinvalid The package phantomjs@1.9.18 does not satisfy its siblings' peerDependencies requirements!
+123 error peerinvalid Peer mocha-phantomjs@3.6.0 wants phantomjs@1.9.1 - 1.9.7-15
+124 verbose exit [ 1, true ]
