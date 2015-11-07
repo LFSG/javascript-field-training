@@ -8,7 +8,7 @@
     "watch": "watchify index.test.js -o static/bundle.js -dv",
     "start-server": "nodemon ./server.js",
     "start": "npm run start-server",
-    "test": "mocha-phantomjs ./client-tests/casper.js"
+    "test": "./node_modules/.bin/mocha-phantomjs ./game/game.html"
   },
   "jest": {
     "scriptPreprocessor": "test/preprocessor.js",

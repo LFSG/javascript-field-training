@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
   var ship = new Ship($('#container'));
-  $('body').on('keyup', function(e) {
+  $('body').on('keydown', function(e) {
     if(e.keyCode === 37) {
       ship.direction = 'left';
     }
