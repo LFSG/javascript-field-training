@@ -1,11 +1,11 @@
-function Token($el) {
-  this.node = $('<img id="token" src="./pictures/ship.gif"></img>');
+function Ship($el) {
+  this.node = $('<img id="ship" src="./pictures/ship.gif"></img>');
   this.currentDirection = 'right';
   this.SPEED = 200;
   $el.append(this.node);
 }
 
-Token.prototype.move = function(direction){
+Ship.prototype.move = function(direction){
   var direction = this.currentDirection;
   var position = this.node.position();
   if (direction === 'right') {
