@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "mocha": "~2.3.3",
-    "expect": "~0.3.1"
+    "expect": "~0.3.1",
+    "chai-jq": "~0.0.8",
+    "jquery": "~2.1.4",
+    "chai": "~3.4.1"
   }
 }

@@ -4,7 +4,7 @@
   "description": "Learning Full Stack Game",
   "main": "server.js",
   "scripts": {
-    "start-server": "nodemon ./server.js",
+    "start-server": "node ./server.js",
     "start": "npm run start-server",
     "test-frontend": "./node_modules/.bin/mocha-phantomjs ./game/game.html",
     "test-backend": "mocha index.test.js -w",
