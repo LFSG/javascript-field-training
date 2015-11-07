@@ -15,9 +15,7 @@ AddAsteroid.prototype.move = function () {
 
 	if(position.top > 550) {
 		this.node.remove();
-		// var score = $('#score').text();
-		// score++;
-		// $('#score').text(score);
+
 	}
 	if(ship.position().left - position.left < 45 && ship.position().left - position.left > -45 && ship.position().top - position.top < 45 && ship.position().top - position.top > -45){
     alert('game over');
@@ -27,8 +25,8 @@ AddAsteroid.prototype.move = function () {
 
 
 function AddBonusToken($el) {
-	this.node = $('<img class="bonusToken" src="./pictures/cs.png"></img>');
-	this.SPEED = Math.floor(Math.random()*20);
+	this.node = $('<img class="bonusToken" src="./pictures/cs.png"></img>')
+	this.SPEED = Math.floor(Math.random()*40);
 	this.node.css({top: Math.floor(Math.random() * 250) + 8, left: Math.floor(Math.random() * 650) + 8});
 	$el.append(this.node);
 	setTimeout(this.move.bind(this), this.SPEED);
