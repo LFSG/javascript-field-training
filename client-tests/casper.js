@@ -1,4 +1,3 @@
-
 var page = require('webpage').create();
 var mocha = require('mocha');
 
