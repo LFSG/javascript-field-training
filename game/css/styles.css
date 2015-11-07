@@ -49,12 +49,25 @@
   display: none;
 }
 
+.suite .pass {
+    color: rgba(0, 128, 0, 1);
+    
+}
+
 #mocha .suite {
   width: 641px;
-  float: right;
-  bottom: 620px;
-  position: relative;
+
 }
+
+#mocha-report {
+   top: -610px;
+  position: relative;
+  float: right;
+}
+
+/*#mocha-report:nth-child(0) {
+    margin-left: 100px;
+}*/
 
 #mocha-stats {
   float: right;
