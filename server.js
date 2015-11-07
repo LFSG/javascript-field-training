@@ -6,26 +6,29 @@ http.createServer(function(req, res) {
     fs.readFile('./index.html', function(err, body) {
       if (err) {
 			     res.writeHead(500);
-			        res.end();
+			        res.end('error');
 		  }
     res.writeHead(200, {
       'Content-Type': 'text/html'
     })
-
     res.end(body);
     })
   }
 
   if(req.method === 'POST') {
+    console.log('serverrrrr');
     req.on('data', function(chunk){
-      var body = '';
-      body += chunk;
-      res.writeHead(200);
-      res.write('Hello, world!\n');
-      res.end();
+      var body;
+      body = chunk;
 
+      
     });
-
-  // res.end('ello, world!\n');
+    req.on('end', function() {
+      res.writeHead(200);
+      // res.write();
+      res.end('Hello, world!\n');
+      // console.log(res);
+    });
   }
+
 }).listen(8000);

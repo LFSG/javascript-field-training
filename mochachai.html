@@ -8,10 +8,9 @@
 
   <script src="node_modules/chai/chai.js"></script>
   <script src="node_modules/mocha/mocha.js"></script>
+  <script src="node_modules/sinon/lib/sinon.js"></script>
   <script>mocha.setup('bdd')</script>
-  <script src="sampleproject.js" data-cover></script>
-  <script src="node_modules/blanket/src/blanket.js"></script>
-  <script src="test/test.js"></script>
+  <script src="static/bundle.js"></script>
   <script>
     mocha.globals();
     if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
