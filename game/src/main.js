@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
-  var ship = new Ship($('#container'));
-  $('body').on('keydown', function(e) {
+  var ship = new Ship(document.getElementById('container'));
+  document.getElementById('body').addEventListener('keydown', function(e) {
     if(e.keyCode === 37) {
       ship.direction = 'left';
       ship.node.addClass('rotateW');
