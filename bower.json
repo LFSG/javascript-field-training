@@ -1,0 +1,22 @@
+{
+  "name": "LFSG",
+  "description": "Learning Full Stack Game",
+  "main": "server.js",
+  "authors": [
+    "William Gottschalk <will.gottschalk@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/wgottschalk/learn-full-stack-game",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.3.3",
+    "expect": "~0.3.1"
+  }
+}

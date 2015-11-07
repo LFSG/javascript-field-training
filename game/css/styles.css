@@ -1,9 +1,9 @@
-#token {
+#ship {
   height: 50px;
   width: 50px;
-  position: relative;
+  position: absolute;
   display: inline-block;
-  top:550px;
+  top: 550px;
 }
 
 #container {
@@ -18,10 +18,21 @@
 }
 
 .asteroid {
-  height: 50px;
-  width: 50px;
-  top: 0px;
-  right: 50px;
-  position: relative;
+ height: 50px;
+ width: 50px;
+ top: 0px;
+ position: absolute;
 }
 
+#score {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: helvetica, sans-serif;
+  width: 702px;
+}
+
+.hide{
+  display: none;
+}
