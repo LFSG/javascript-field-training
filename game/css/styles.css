@@ -9,6 +9,7 @@
 #mainContainer {
   width: 1420px;
   position: absolute;
+  height: 700px;
 }
 
 #container {
